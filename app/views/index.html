@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body data-ng-app="lightningVoting">
+    <div>
+        kjqelkjklasjklas
+        <br/>
+        kjlksjlkjd
+        <br/>
+        <div ng-controller="TalkController as lightningTalk">
+            <table class="table">
+                <tr>
+                    <td>talk</td>
+                    <td>speaker</td>
+                </tr>
+                <tr data-ng-repeat="talk in lightningTalk.talks">
+                    <td>
+                        {{ talk.title }}
+                    </td>
+                    <td>
+                        {{ talk.speaker }}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--Library-->
+    <script src="../../Scripts/angular.min.js"></script>
+    <!--Scripts-->
+    <script src="../talkModule.js"></script>
+    
+    <!--Controller-->
+    <script src="../controllers/talkController.js"></script><script src="../services/talkService.js"></script>
+</body>
+</html>
