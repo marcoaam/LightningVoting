@@ -6,7 +6,7 @@
 
     function talkController(talkService) {
         var model = this;
-        model.talks = talkService.getTalks();
+        model.talks = talkService.getTalks;
     };
 
 }());

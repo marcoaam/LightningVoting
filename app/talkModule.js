@@ -1,3 +1,5 @@
-﻿(function() {
-    var app = angular.module('lightningVoting', []);
+﻿(function () {
+    "use strict";
+
+    angular.module('lightningVoting', []);
 }())
